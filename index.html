@@ -7,21 +7,21 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="./styles/style.css">
     <style>
-        /* Seus estilos CSS adicionais aqui */
+        /*CSS adicionais aqui */
     </style>
 </head>
 <body>
+    <section class="wrapper">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </section>
     <header class="cabecalho">
         <nav class="cabecalho-menu">
             <a class="cabecalho-menu-link" href="index.html">Home</a>
             <a class="cabecalho-menu-link" href="about.html">About Me</a>
         </nav>
     </header>
-    <form>
-        <input type="checkbox" id="theme-toggle" class="checkbox">
-        <label class="toggle-label" for="theme-toggle">
-        </label>
-    </form>
     <main class="apresentacao">
         <section class="apresentacao-conteudo">
             <h1 class="apresentacao-conteudo-titulo">Opa, <strong>Sou o Numb (NMB)</strong></h1>
@@ -42,25 +42,11 @@
                 </a>
             </div>                        
         </section>
-        <img class="apresentacao-imagem" src="./assets/eu2.jpg" alt="Foto do NMB" class="preto-e-branco">
+        <img class="apresentacao-imagem" src="./assets/nmb.gif" alt="Animação do NMB">
     </main>
-
     <footer class="rodape">
         <p>BY: NMB.</p>
     </footer>
-    <script>
-        const themeToggle = document.getElementById('theme-toggle');
-        const body = document.body;
-
-        themeToggle.addEventListener('change', function() {
-            if (this.checked) {
-                body.style.backgroundColor = 'white';
-                body.style.color = 'black';
-            } else {
-                body.style.backgroundColor = 'var(--cor-primaria)';
-                body.style.color = 'var(--cor-secundaria)';
-            }
-        });
-    </script>
+    <script> src="./script.js"</script>
 </body>
 </html>
